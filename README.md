@@ -1,0 +1,1 @@
+# tw-smart-hero-slider-pro
