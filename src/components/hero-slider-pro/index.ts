@@ -483,6 +483,7 @@ export default class HeroSliderPro extends LitElement {
     const altText = slide.alt_text || slide.title || 'Slide image';
     const overlayOpacity = slide.overlay_opacity ?? 40;
     const showCta = slide.show_cta !== false;
+    const ctaText = slide.cta_text || 'تسوق الآن';
     const isVisible = this.visibleIndexes.has(index);
     const isActive = index === this.activeIndex;
 
@@ -517,14 +518,14 @@ export default class HeroSliderPro extends LitElement {
           <div class="shsp-card-panel" style="color:${slide.text_color || '#ffffff'};">
             ${slide.title ? html`<h3 class="shsp-card-title">${slide.title}</h3>` : ''}
             ${slide.description ? html`<p class="shsp-card-desc">${slide.description}</p>` : ''}
-            ${showCta && slide.cta_text && slide.cta_url
+            ${showCta && slide.cta_url
               ? html`
                   <a
                     class="shsp-cta"
                     href="${slide.cta_url}"
                     style="background-color:${slide.button_bg_color || '#0ea5a3'};color:${slide.button_text_color || '#ffffff'};"
                   >
-                    ${slide.cta_text}
+                    ${ctaText}
                   </a>
                 `
               : ''}
