@@ -1,14 +1,14 @@
 {
     "name": {
-        "ar": "سلايدر Hero الذكي برو",
-        "en": "Smart Hero Slider Pro"
+        "ar": "tw-smart-hero-slider-pro",
+        "en": "tw-smart-hero-slider-pro"
     },
     "description": {
-        "ar": "سلايدر بطاقات (Card Slider) احترافي وفخم: صورة أولًا ثم لوحة محتوى زجاجية بعنوان ووصف وزر CTA بتسلسل حركي ناعم، 3 بطاقات على الديسكتوب وبطاقتان على التابلت وبطاقة واحدة على الجوال، بدعم كامل للعربية RTL والإنجليزية LTR.",
-        "en": "A premium image-first card slider: a glass content panel with title, description and a CTA button revealed with a soft staggered animation, 3 cards on desktop, 2 on tablet, 1 on mobile, with full Arabic RTL / English LTR support."
+        "ar": null,
+        "en": null
     },
     "author_email": "alatycom@gmail.com",
-    "support_url": "https://github.com/rqmystore-del/tw-smart-hero-slider-pro/issues",
+    "support_url": null,
     "repository": "https://github.com/rqmystore-del/tw-smart-hero-slider-pro",
     "components": [
         {
