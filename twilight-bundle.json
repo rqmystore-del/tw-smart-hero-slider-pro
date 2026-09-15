@@ -1,14 +1,343 @@
 {
     "name": {
-        "ar": "tw-smart-hero-slider-pro",
-        "en": "tw-smart-hero-slider-pro"
+        "ar": "سلايدر Hero الذكي برو",
+        "en": "Smart Hero Slider Pro"
     },
     "description": {
-        "ar": "",
-        "en": ""
+        "ar": "سلايدر بطاقات (Card Slider) احترافي وفخم: صورة أولًا ثم لوحة محتوى زجاجية بعنوان ووصف وزر CTA بتسلسل حركي ناعم، 3 بطاقات على الديسكتوب وبطاقتان على التابلت وبطاقة واحدة على الجوال، بدعم كامل للعربية RTL والإنجليزية LTR.",
+        "en": "A premium image-first card slider: a glass content panel with title, description and a CTA button revealed with a soft staggered animation, 3 cards on desktop, 2 on tablet, 1 on mobile, with full Arabic RTL / English LTR support."
     },
     "author_email": "alatycom@gmail.com",
-    "support_url": "",
+    "support_url": "https://github.com/rqmystore-del/tw-smart-hero-slider-pro/issues",
     "repository": "https://github.com/rqmystore-del/tw-smart-hero-slider-pro",
-    "components": []
+    "components": [
+        {
+            "title": "سلايدر Hero الذكي برو",
+            "icon": "sicon-layout-grid",
+            "name": "hero-slider-pro",
+            "key": "e040fb7a-3cef-4bc9-87a8-32b037121302",
+            "image": "https://raw.githubusercontent.com/rqmystore-del/tw-smart-hero-slider-pro/main/templates-thumbs/hero-slider-pro-component.png",
+            "fields": [
+                {
+                    "id": "autoplay",
+                    "icon": "sicon-toggle-off",
+                    "type": "boolean",
+                    "label": "التشغيل التلقائي (اختياري)",
+                    "format": "switch",
+                    "required": false,
+                    "value": false
+                },
+                {
+                    "id": "autoplay_duration",
+                    "icon": "sicon-pencil-ruler",
+                    "type": "number",
+                    "label": "مدة عرض البطاقة (ثانية)",
+                    "format": "slider",
+                    "inputType": "range",
+                    "required": false,
+                    "minimum": 2,
+                    "maximum": 15,
+                    "step": 1,
+                    "value": 5
+                },
+                {
+                    "id": "transition_speed",
+                    "icon": "sicon-pencil-ruler",
+                    "type": "number",
+                    "label": "سرعة حركة الانتقال (مللي ثانية)",
+                    "format": "slider",
+                    "inputType": "range",
+                    "required": false,
+                    "minimum": 200,
+                    "maximum": 1500,
+                    "step": 50,
+                    "value": 600
+                },
+                {
+                    "id": "loop",
+                    "icon": "sicon-toggle-off",
+                    "type": "boolean",
+                    "label": "التكرار اللانهائي (Loop)",
+                    "format": "switch",
+                    "required": false,
+                    "value": true,
+                    "selected": true
+                },
+                {
+                    "id": "show_arrows",
+                    "icon": "sicon-toggle-off",
+                    "type": "boolean",
+                    "label": "إظهار أسهم التنقل",
+                    "format": "switch",
+                    "required": false,
+                    "value": true,
+                    "selected": true
+                },
+                {
+                    "id": "show_dots",
+                    "icon": "sicon-toggle-off",
+                    "type": "boolean",
+                    "label": "إظهار نقاط التنقل",
+                    "format": "switch",
+                    "required": false,
+                    "value": true,
+                    "selected": true
+                },
+                {
+                    "id": "pause_on_hover",
+                    "icon": "sicon-toggle-off",
+                    "type": "boolean",
+                    "label": "إيقاف عند تمرير الفأرة",
+                    "format": "switch",
+                    "required": false,
+                    "value": true,
+                    "selected": true
+                },
+                {
+                    "id": "pause_on_focus",
+                    "icon": "sicon-toggle-off",
+                    "type": "boolean",
+                    "label": "إيقاف عند التركيز بلوحة المفاتيح",
+                    "format": "switch",
+                    "required": false,
+                    "value": true,
+                    "selected": true
+                },
+                {
+                    "id": "slides",
+                    "icon": "sicon-image-carousel",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "الشرائح",
+                    "item_label": "بطاقة",
+                    "required": true,
+                    "minLength": 1,
+                    "maxLength": 8,
+                    "value": [
+                        {
+                            "image_desktop": "https://placehold.co/1080x1440/1f2937/ffffff?text=Card+1",
+                            "image_mobile": "https://placehold.co/900x1200/1f2937/ffffff?text=Card+1",
+                            "alt_text": "بطاقة تعريفية بمنتج",
+                            "title": "تشكيلتنا الجديدة وصلت",
+                            "description": "اكتشف أحدث المنتجات بأسعار مميزة لفترة محدودة",
+                            "show_cta": true,
+                            "cta_text": "تسوق الآن",
+                            "text_color": "#ffffff",
+                            "button_bg_color": "#0ea5a3",
+                            "button_text_color": "#ffffff",
+                            "overlay_color": "#000000",
+                            "overlay_opacity": 40
+                        },
+                        {
+                            "image_desktop": "https://placehold.co/1080x1440/7c2d12/ffffff?text=Card+2",
+                            "image_mobile": "https://placehold.co/900x1200/7c2d12/ffffff?text=Card+2",
+                            "alt_text": "بطاقة عرض خاص",
+                            "title": "خصم يصل إلى 50%",
+                            "description": "على تشكيلة مختارة من المنتجات لفترة محدودة",
+                            "show_cta": true,
+                            "cta_text": "اكتشف العروض",
+                            "text_color": "#ffffff",
+                            "button_bg_color": "#f97316",
+                            "button_text_color": "#111111",
+                            "overlay_color": "#000000",
+                            "overlay_opacity": 45
+                        },
+                        {
+                            "image_desktop": "https://placehold.co/1080x1440/065f46/ffffff?text=Card+3",
+                            "image_mobile": "https://placehold.co/900x1200/065f46/ffffff?text=Card+3",
+                            "alt_text": "بطاقة تعريفية ثالثة",
+                            "title": "خدمة توصيل سريعة",
+                            "description": "اطلب اليوم واستلم خلال 24 ساعة",
+                            "show_cta": true,
+                            "cta_text": "اعرف التفاصيل",
+                            "text_color": "#ffffff",
+                            "button_bg_color": "#22c55e",
+                            "button_text_color": "#052e12",
+                            "overlay_color": "#000000",
+                            "overlay_opacity": 40
+                        }
+                    ],
+                    "fields": [
+                        {
+                            "id": "image_desktop",
+                            "icon": "sicon-image",
+                            "type": "string",
+                            "format": "image",
+                            "label": "صورة البطاقة (ديسكتوب)",
+                            "description": "إلزامية - بطاقة عمودية، المقاس المقترح 1080×1440 بكسل",
+                            "required": true
+                        },
+                        {
+                            "id": "image_mobile",
+                            "icon": "sicon-image",
+                            "type": "string",
+                            "format": "image",
+                            "label": "صورة البطاقة (جوال - اختياري)",
+                            "description": "إن لم تُحدد سيتم استخدام صورة الديسكتوب تلقائيًا",
+                            "required": false
+                        },
+                        {
+                            "id": "alt_text",
+                            "icon": "sicon-format-text-alt",
+                            "type": "string",
+                            "format": "text",
+                            "label": "النص البديل للصورة (Alt Text)",
+                            "description": "إن تُرك فارغًا سيُستخدم العنوان تلقائيًا",
+                            "multilanguage": true,
+                            "required": false,
+                            "maxLength": 150
+                        },
+                        {
+                            "id": "title",
+                            "icon": "sicon-format-text-alt",
+                            "type": "string",
+                            "format": "text",
+                            "label": "العنوان الرئيسي",
+                            "multilanguage": true,
+                            "required": false,
+                            "placeholder": "أدخل العنوان هنا...",
+                            "maxLength": 100
+                        },
+                        {
+                            "id": "description",
+                            "icon": "sicon-paragraph",
+                            "type": "string",
+                            "format": "textarea",
+                            "label": "الوصف القصير",
+                            "multilanguage": true,
+                            "required": false,
+                            "placeholder": "أدخل وصفًا قصيرًا هنا...",
+                            "maxLength": 200
+                        },
+                        {
+                            "id": "show_cta",
+                            "icon": "sicon-toggle-off",
+                            "type": "boolean",
+                            "format": "switch",
+                            "label": "إظهار زر CTA",
+                            "required": false,
+                            "value": true,
+                            "selected": true
+                        },
+                        {
+                            "id": "cta_text",
+                            "icon": "sicon-format-text-alt",
+                            "type": "string",
+                            "format": "text",
+                            "label": "نص الزر",
+                            "multilanguage": true,
+                            "required": false,
+                            "placeholder": "مثال: تسوق الآن",
+                            "maxLength": 40
+                        },
+                        {
+                            "id": "cta_url",
+                            "icon": "sicon-link",
+                            "type": "items",
+                            "format": "variable-list",
+                            "label": "رابط الزر",
+                            "description": "اختر منتجًا، تصنيفًا، صفحة تعريفية، أو أدخل رابطًا مخصصًا",
+                            "required": false,
+                            "source": "custom",
+                            "sources": [
+                                {
+                                    "label": "منتج",
+                                    "key": "products",
+                                    "value": "products"
+                                },
+                                {
+                                    "label": "تصنيف",
+                                    "key": "categories",
+                                    "value": "categories"
+                                },
+                                {
+                                    "label": "صفحة تعريفية",
+                                    "key": "pages",
+                                    "value": "pages"
+                                },
+                                {
+                                    "label": "رابط مخصص",
+                                    "key": "custom",
+                                    "value": "custom"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "text_color",
+                            "icon": "sicon-color-palette",
+                            "type": "string",
+                            "format": "color",
+                            "inputType": "color",
+                            "label": "لون النص",
+                            "required": false,
+                            "value": "#ffffff"
+                        },
+                        {
+                            "id": "button_bg_color",
+                            "icon": "sicon-color-palette",
+                            "type": "string",
+                            "format": "color",
+                            "inputType": "color",
+                            "label": "لون خلفية الزر",
+                            "required": false,
+                            "value": "#0ea5a3"
+                        },
+                        {
+                            "id": "button_text_color",
+                            "icon": "sicon-color-palette",
+                            "type": "string",
+                            "format": "color",
+                            "inputType": "color",
+                            "label": "لون نص الزر",
+                            "required": false,
+                            "value": "#ffffff"
+                        },
+                        {
+                            "id": "overlay_color",
+                            "icon": "sicon-color-palette",
+                            "type": "string",
+                            "format": "color",
+                            "inputType": "color",
+                            "label": "لون التعتيم (Overlay)",
+                            "required": false,
+                            "value": "#000000"
+                        },
+                        {
+                            "id": "overlay_opacity",
+                            "icon": "sicon-pencil-ruler",
+                            "type": "number",
+                            "format": "slider",
+                            "inputType": "range",
+                            "label": "شفافية التعتيم (%)",
+                            "required": false,
+                            "minimum": 0,
+                            "maximum": 100,
+                            "step": 5,
+                            "value": 40
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "templates": [
+        {
+            "id": "6123051f-4272-4ac2-a567-3ed2e8005cdc",
+            "path": "templates.template-slide",
+            "category_id": "989286562",
+            "primary_color": "",
+            "thumbnail": "https://cdn.assets.salla.network/previews/jp5eugvcpixz/assets/d2377d5b8b8669f05203916002581f8f2cbff35c039c350e9bd680ace1297d69/templates-thumbs/template-slide.png",
+            "is_default": false,
+            "public_preview_url": "https://salla.design/preview/s/jp5eugvcpixz/template-slide"
+        }
+    ],
+    "demo_settings": {
+        "mock_product": {
+            "enabled": true,
+            "status": "available",
+            "price": 100,
+            "regularPrice": 150,
+            "isOnSale": true
+        }
+    }
 }
