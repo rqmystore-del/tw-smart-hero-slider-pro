@@ -410,5 +410,8 @@
             "regularPrice": 150,
             "isOnSale": true
         }
-    }
+    },
+    "features": [
+        "landing-page-templates"
+    ]
 }
