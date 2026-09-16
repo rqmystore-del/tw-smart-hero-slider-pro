@@ -1,11 +1,11 @@
 {
     "name": {
         "ar": "سلايدر المنتجات الذكي برو",
-        "en": "tw-smart-hero-slider-pro"
+        "en": "Smart Hero Slider Pro"
     },
     "description": {
-        "ar": null,
-        "en": null
+        "ar": "سلايدر احترافي لعرض المنتجات ببطاقات متجاوبة مع الصور والعناوين والوصف وأزرار الشراء والتخصيص الكامل.",
+        "en": "Professional responsive product slider with images, titles, descriptions, CTA buttons, and full customization."
     },
     "author_email": "alatycom@gmail.com",
     "support_url": "http://www.rqmystore.com/",
